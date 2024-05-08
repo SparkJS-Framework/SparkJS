@@ -1,8 +1,15 @@
 import express from 'express';
 import dotenv from 'dotenv';
+import path from 'path';
+import { assets } from './config/assetPath.js';
 dotenv.config();
 
 const app = express();
+
+app.locals.assets = assets;
+
+// Serve static files from the 'public' folder
+app.use(express.static(path.resolve('public')));
 
 app.use(express.json()); // Parses incoming JSON requests
 app.use(express.urlencoded({ extended: true })); 

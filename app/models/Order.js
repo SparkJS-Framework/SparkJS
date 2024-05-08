@@ -25,4 +25,4 @@ export const Order = sequelize.define('Order', {
   },
 });
 
-sequelize.sync({ force: true });
+sequelize.sync({ force: false });
