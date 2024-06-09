@@ -7,9 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "CreateModel": "node scripts/createModel.mjs"
+    "CreateModel": "node app/console/createModel.mjs"
   },
-  "author": "",
+  "author": "Talles Amadeu",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^16.4.5",

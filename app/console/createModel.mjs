@@ -31,7 +31,7 @@ if (existsSync(modelFilePath)) {
 
 // Content to write to the model file
 const modelContent = `import { DataTypes } from 'sequelize';
-import sequelize from '../config/sequelize.js';
+import sequelize from '../config/sequelize.cjs';
 
 export const ${modelName} = sequelize.define('${modelName}', {
   // Define your fields here

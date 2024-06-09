@@ -1,5 +1,5 @@
 import { DataTypes } from 'sequelize';
-import sequelize from '../../config/sequelize.js';
+import sequelize from '../../config/sequelize.cjs';
 
 export const User = sequelize.define('User', {
   // Define your fields here
