@@ -1,6 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('head') %>
+
+<body>
+
 <%- include('header') %>
 
-<main>
+<main class="main">
   <!-- This is the yield area -->
   <%- include(`./${content}`) %>
 </main>
@@ -9,3 +16,5 @@
   <!-- Footer content -->
   <%- include('footer') %>
 </footer>
+</body>
+</html>

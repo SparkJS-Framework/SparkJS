@@ -3,10 +3,12 @@ const router = express.Router();
 
 // web routes here
 
-import { index, create } from '../app/controllers/indexController.js';
+import { index } from '../app/controllers/indexController.js';
+import { helpIndex } from '../app/controllers/helpController.js';
+
 
 router.get('/', index);
 
-router.post('/createOrder', create);
+router.get('/help', helpIndex);
 
 export default router;
